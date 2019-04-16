@@ -16,7 +16,7 @@ weatherForm.addEventListener('submit', e => {
             } else {
                 const forecast = data.forecast;
                 messageOne.textContent = data.location;
-                messageTwo.textContent = `${forecast.summary} It is currently ${forecast.temperature} °C. There is ${forecast.precipProbability}% chance of rain.`;
+                messageTwo.textContent = `${forecast.summary} It is currently ${forecast.temperature} °C with a wind speed of ${forecast.windSpeed} km/h. There is ${forecast.precipProbability}% chance of rain.`;
             }
         });
     });
